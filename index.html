@@ -21,30 +21,27 @@
             </div>
         </header>
         <section class="w-full h-[25vh] bg-gray-900 min-h-[110px] flex justify-evenly items-center">
-            <div class="flex flex-row items-center gap-2">
-                <label class="text-white">Name</label>
-                <input class="rounded-lg focus:border-orange-600 h-[40px] w-[20vw] min-w-[180px]" type="text" placeholder="ex. cookies">
-            </div>
+            <form id="recipeForm" class="flex flex-row items-center gap-2 w-full justify-evenly">
+                <div class="flex flex-row items-center gap-2">
+                    <label class="text-white">Name</label>
+                    <input id="input" class="rounded-lg focus:border-orange-600 h-[40px] w-[20vw] min-w-[180px]" type="text" placeholder="ex. cookies">
+                </div>
 
-            <div>
-                <button class="text-white w-[100px] h-[40px] bg-orange-600 rounded-lg text-sm">Add recipe</button>
-                <button class="text-orange-600 w-[100px] h-[40px]  border-2 border-orange-600 rounded-lg text-sm hover:bg-orange-600 hover:text-white transition-all duration-300 ease-in-out">Delete All</button>
-            </div>
+                <div class="flex gap-4">
+                    <button type="submit" id="addRecipe" class="text-white w-[100px] h-[40px] bg-orange-600 rounded-lg text-sm">Add recipe</button>
+                    <button type="button" id="deleteBtn" class="text-orange-600 w-[100px] h-[40px] border-2 border-orange-600 rounded-lg text-sm hover:bg-orange-600 hover:text-white transition-all duration-300 ease-in-out">Delete All</button>
+                </div>
+            </form>
         </section>
-        <section class=" notepad w-full h-[65vh] min-h-[400px]">
+        <section class="notepad w-full h-[65vh] min-h-[400px]">
             <div class="w-full h-[15%] flex justify-left items-end px-9">
                 <h1 class="text-3xl text-orange-600 font-bold underline">My Library</h1>
             </div>
             <div class="notes w-full h-auto px-9 text-2xl mt-4">
-                <ul class="list-disc marker:text-gray-600 ml-5">
-                    <li><a href="" target="_blank">Cookies </a><span>01/11/25</span></li>
-                    <li><a href="" target="_blank">Cake </a><span>06/11/25</span></li>
-                    <li><a href="" target="_blank">Brownies </a><span>12/11/25</span></li>
-
-                </ul>
+                <ul id="ulEl" class="list-disc marker:text-gray-600 ml-5"></ul>
             </div>
         </section>
     </main>
-
+    <script src="index.js"></script>
 </body>
 </html>
