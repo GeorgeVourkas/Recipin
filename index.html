@@ -6,39 +6,42 @@
     <title>Recipin</title>
     <link rel="icon" href="resources/cookieLogo.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+
+</head>
 <body>
-    <!-- bg-[url('/resources/doted.jpg')] bg-cover bg-center -->
-    <main class="w-screen">
-        <header class="w-full h-[12vh] bg-gray-600 pl-4 flex items-center min-h-[80px]">
-            <div class="flex flex-row justify-left items-center gap-1">
-                <img src="resources/cookieLogo.png" alt="cookieLogo" class="h-[50px]">
-                <h1 class="text-2xl font-bold text-orange-600">Recipin</h1>
+    <main id="main">
+        <header id="header">
+            <div class="logoContainer">
+                <img src="resources/cookieLogo.png" alt="cookieLogo" id="logo">
+                <h1 id="title">Recipin</h1>
             </div>
         </header>
-        <section class="w-full h-[25vh] bg-gray-900 min-h-[110px] flex justify-evenly items-center">
-            <form id="recipeForm" class="flex flex-row items-center gap-2 w-full justify-evenly">
-                <div class="flex flex-row items-center gap-2">
-                    <label class="text-white">Name</label>
-                    <input id="input" class="rounded-lg focus:border-orange-600 h-[40px] w-[20vw] min-w-[180px]" type="text" placeholder="ex. cookies">
-                </div>
 
-                <div class="flex gap-4">
-                    <button type="submit" id="addRecipe" class="text-white w-[100px] h-[40px] bg-orange-600 rounded-lg text-sm">Add recipe</button>
-                    <button type="button" id="deleteBtn" class="text-orange-600 w-[100px] h-[40px] border-2 border-orange-600 rounded-lg text-sm hover:bg-orange-600 hover:text-white transition-all duration-300 ease-in-out">Delete All</button>
+        <section id="formSection">
+            <form id="recipeForm">
+                <div class="inputGroup">
+                    <label for="input">Name</label>
+                    <input id="input" type="text" placeholder="ex. cookies">
+                </div>
+                <div class="buttonGroup">
+                    <button id="addRecipe">Add recipe</button>
+                    <button id="deleteBtn">Delete All</button>
                 </div>
             </form>
         </section>
-        <section class="notepad w-full h-[65vh] min-h-[400px]">
-            <div class="w-full h-[15%] flex justify-left items-end px-9">
-                <h1 class="text-3xl text-orange-600 font-bold underline">My Library</h1>
+
+        <section class="notepad">
+            <div class="notepadHeader">
+                <h1>My Library</h1>
             </div>
-            <div class="notes w-full h-auto px-9 text-2xl mt-4">
-                <ul id="ulEl" class="list-disc marker:text-gray-600 ml-5"></ul>
+            <div class="notes">
+                <ul id="">
+                    <li>test</li>
+                </ul>
             </div>
         </section>
     </main>

@@ -1,13 +1,133 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 body{
     overflow-x: hidden;
 }
 
+main{
+    width: 100vw;
+    min-width: 600px;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    background-color: #374151;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 2px;
+}
+.logoContainer img{
+    height: 50px;
+}
+.logoContainer h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #C2410C;
+}
+
+/* Form section */
+
+#formSection{
+    width: 100%;
+    height: 20vh;
+    background-color: #1F2937;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#recipeForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputGroup input{
+    border-radius: 10px;
+    height: 40px;
+    width: 20vw;
+    min-width: 189px;
+    border: none;
+    padding-left: 15px;
+
+}
+
+.inputGroup input:focus {
+    border: 3px solid #C2410C !important;
+    outline: none;
+}
+
+.inputGroup label{
+    color: white;
+}
+
+.buttonGroup{
+    display: flex;
+    gap: 10px;
+}
+
+#addRecipe{
+    color: white;
+    width: 120px;
+    height: 40px;
+    background-color: #C2410C;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+#addRecipe:hover{
+    background-color: #ee4e0f;
+    transition: 0.3s ease-in-out;
+
+}
+
+#deleteBtn{
+    color: #C2410C;
+    width: 120px;
+    height: 40px;
+    border: 4px solid #C2410C;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: transparent;
+    
+}
+#deleteBtn:hover{
+    color: white;
+    background-color: #C2410C;
+    transition: 0.3s ease-in-out;
+}
+/* Notepad */
+
 .notepad{
+    width: 100%;
+    height: 65vh;
+    min-height: 400px;
     background: url("resources/doted.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +135,46 @@ body{
     font-weight: 400;
     font-style: normal;
 
+}
+.notepadHeader{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+.notepadHeader h1 {
+    font-size: 1.5rem;
+    color: #C2410C;
+    font-weight: bold;
+    
+    /* Fancy underline */
+    text-decoration-line: underline;       /* adds underline */
+    text-decoration-color: #C2410C;     /* underline color (can be different from text) */
+    text-decoration-thickness: 2px;        /* thickness of the underline */
+    text-underline-offset: 3px;            /* space between text and underline */
+}
+
+.notes {
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    display: flex;
+}
+
+.notes ul {
+    list-style-type: disc;
+    padding-left: 20px; /* needed for bullets to show */
+}
+
+.notes li {
+    margin-bottom: 5px; /* optional spacing between items */
 }
 
 .notes span{
