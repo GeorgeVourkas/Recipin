@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 
@@ -12,6 +13,7 @@ body{
 main{
     width: 100vw;
     min-width: 600px;
+    font-family: "Inter",sans-serif;
 }
 
 header{
@@ -131,10 +133,9 @@ header{
     background: url("resources/doted.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Give You Glory", cursive;
-    font-weight: 400;
-    font-style: normal;
-
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    
 }
 .notepadHeader{
     width: 100%;
@@ -145,17 +146,16 @@ header{
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 10px;
+    
 }
 .notepadHeader h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #C2410C;
     font-weight: bold;
-    
-    /* Fancy underline */
-    text-decoration-line: underline;       /* adds underline */
-    text-decoration-color: #C2410C;     /* underline color (can be different from text) */
-    text-decoration-thickness: 2px;        /* thickness of the underline */
-    text-underline-offset: 3px;            /* space between text and underline */
+    text-decoration-line: underline;       
+    text-decoration-color: #C2410C;     
+    text-decoration-thickness: 2px;       
+    text-underline-offset: 3px;           
 }
 
 .notes {
@@ -163,7 +163,7 @@ header{
     height: auto;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-top: 5px;
     display: flex;
 }
